@@ -1,0 +1,38 @@
+@import "tailwindcss";
+:root {
+  --body_background: white;
+  --text_color: black;
+  --shadow_color: #a9a9a9;
+  --main_shadow: #a9a9a9;
+  --heading: hsl(244, 100%, 27%);
+  --table_head: #e5e5e5;
+  --divider: #dbdbdb;
+}
+
+[data-theme="dark"] {
+  --body_background: #0f0f0f;
+  --text_color: #fff;
+  --shadow_color: #090089;
+  --main_shadow: #1b1a3d;
+  --heading: white;
+  --table_head: #000;
+  --divider: #2f2f2f;
+}
+
+body {
+  background-color: var(--body_background);
+  overflow-x: hidden;
+}
+
+.box-shadow-nav {
+  box-shadow: 0 5px 10px 0 var(--shadow_color);
+}
+.box-shadow-main {
+  box-shadow: 0 0px 15px 2px var(--main_shadow);
+}
+.box-shadow-mode {
+  box-shadow: inset -1px 5px 10px 0 var(--shadow_color);
+}
+
+/* #a9a9a9; */
+/* #090089 */
